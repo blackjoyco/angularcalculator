@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="app1" >
+  <head>
+    <title>My AngularJS App</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src='testing.js'> </script>
+       
+        <div ng-controller="crtl1">
+          
+          <span>Values:</span>
+          <input type="text" ng-model="first" />
+          <input type="text" ng-model="second"/>
+          
+          <button ng-click="multiplyValue()">Product</button>
+          <br>
+          <br>
+          {{product}}
+          <br>
+          <br>
+          
+          <span>Values:</span>
+          <input type="text" ng-model="third" />
+          <input type="text" ng-model="fourth" />
+          
+          <button ng-click="addValue()">Sum</button>
+          
+          <br>
+          <br>
+          {{sum}}
+          <br>
+          <br>
+          
+        </div>
+        
+    
+  </body>
+</html>
